@@ -1,7 +1,7 @@
 
 const { upload } = require('docker-image-artifact');
 const githubActionIO = require('./actions_io');
-
+console.log(`testing`);
 const INPUT_IMAGE = 'image';
 
 const OUTPUT_ARTIFACT_NAME = 'artifact_name';
