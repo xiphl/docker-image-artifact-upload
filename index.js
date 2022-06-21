@@ -7,7 +7,9 @@ const OUTPUT_ARTIFACT_NAME = 'artifact_name';
 
 async function runAction(getInput, writeOutput) {
     const imageName = getInput(INPUT_IMAGE, true);
+    console.log(`upload package: before await upload`);
     const artifactName = await upload(imageName);
+    console.log(`upload package: after await upload`);
     writeOutput(OUTPUT_ARTIFACT_NAME, artifactName);
 }
 
