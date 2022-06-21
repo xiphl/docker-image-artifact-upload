@@ -1,4 +1,4 @@
-const { upload } = require('docker-image-artifact');
+const { upload } = require('@skipphl/docker-image-artifact');
 const githubActionIO = require('./actions_io');
 console.log(`testing2`);
 const INPUT_IMAGE = 'image';
